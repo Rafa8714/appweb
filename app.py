@@ -4,7 +4,7 @@ import time
 st.header('Lanzar una moneda')
 chart = st.line_chart([0.5])
 def toss_coin(n):
-    trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5. size=n)
+    trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
     mean= None
     outcome_no = 0
     coutcome_1_count = 0
