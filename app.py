@@ -7,7 +7,7 @@ def toss_coin(n):
     trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
     mean= None
     outcome_no = 0
-    coutcome_1_count = 0
+    outcome_1_count = 0
 
     for r in trial_outcomes:
         outcome_no +=1
@@ -23,5 +23,4 @@ number_of_trials = st.slider('¿Número de intentos?', 1, 1000, 10)
 start_button = st.button('Ejecutar')
 if start_button:
     st.write(f'Experimento con {number_of_trials} intentos en curso.')
-st.write('Esta aplicación aún no es funcional. En costrucción')
-mean = toss_coin(number_of_trials)
+    mean = toss_coin(number_of_trials)
